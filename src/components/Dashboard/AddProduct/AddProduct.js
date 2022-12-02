@@ -27,7 +27,8 @@ const AddProduct = () => {
 
     const formData = new FormData();
     formData.append("image", image);
-    const url = `https://api.imgbb.com/1/upload?key=${imagehostkey}`;
+    //const url = `https://api.imgbb.com/1/upload?key=${imagehostkey}`;
+    const url = `https://api.imgbb.com/1/upload?key=${imagehostkey}`
     fetch(url, {
       method: "POST",
       body: formData,

@@ -5,7 +5,7 @@ import BookingCard from "./BookingCard";
 
 const MyBookings = () => {
   const { user } = useContext(AuthContext);
-  const { data: bookings = [] } = useQuery({
+  const { data: bookings = [],isLoading } = useQuery({
     queryKey: ["mybookings/:email"],
     queryFn: async () => {
       const res = await fetch(
@@ -15,12 +15,16 @@ const MyBookings = () => {
       return data;
     },
   });
+  if(isLoading)
+  {
+    return <h1>Loading</h1>
+  }
   return (
     <div>
       <h1 className="text-4xl font-bold text-center my-10">
         My <span className="text-emerald-600 ml-2">Orders</span>
       </h1>
-      {bookings.length === 0 ? (
+      {bookings?.length === 0 ? (
         <div className="flex flex-col items-center justify-center h-screen">
           {" "}
           You Have No Orders
