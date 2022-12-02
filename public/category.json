@@ -1,0 +1,38 @@
+[
+    {   
+        "categoryId":"1",
+        "brand": "Samsung",
+        "productPicture": "https://i.ibb.co/FKG5Rwm/148560533.jpg",
+        "productName": "Samsung Z Flip",
+        "sellerLocation": "Dhaka",
+        "date": "Dec 1, 2022",
+        "sellerName": "Meraj",
+        "originalPrice": "43000",
+        "resalePrice": "45644",
+        "yearsOfUse": "2 Years"
+    },
+    {
+        "categoryId":"2",
+        "brand":"Nokia",
+        "productPicture": "https://fdn2.gsmarena.com/vv/bigpic/nokia-x30-5g.jpg",
+        "productName": "Nokia-x30-5g",
+        "sellerLocation": "Sylhet",
+        "date": "Dec 2, 2022",
+        "sellerName": "Raj",
+        "originalPrice": "30000",
+        "resalePrice": "15000",
+        "yearsOfUse": "1 Year"
+    },
+    {
+        "categoryId":"3",
+        "brand":"Oppo",
+        "productPicture": "https://i.ibb.co/ccMxnkK/Vivo-Y21-image.jpg",
+        "productName": "Vivo-Y21",
+        "sellerLocation": "Dhaka",
+        "date": "Nov 28, 2022",
+        "sellerName": "Mr A",
+        "originalPrice": "30000",
+        "resalePrice": "2000",
+        "yearsOfUse": "2 Years"
+    }
+]
