@@ -20,7 +20,7 @@ const BookingModal = ({ bookingProduct, setBookingProduct }) => {
       bookingID: bookingProduct?._id,
     };
 
-    fetch("https://mobile-hut-server.vercel.app/bookings", {
+    fetch("http://localhost:5000/bookings", {
       method: "POST",
       headers: {
         "content-type": "application/json",

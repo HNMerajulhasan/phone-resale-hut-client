@@ -10,7 +10,7 @@ const ProductCard = ({ product, setBookingProduct }) => {
     queryKey: ["usersVar", product?.email],
     queryFn: async () => {
       const res = await fetch(
-        `https://mobile-hut-server.vercel.app/usersVar/${product?.email}`
+        `http://localhost:5000/usersVar/${product?.email}`
       );
       const data = await res.json();
       console.log(data);

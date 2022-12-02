@@ -3,7 +3,7 @@ import toast from "react-hot-toast";
 
 const MyProductCard = ({ myProduct, refetch }) => {
   const handleProductDelete = (id) => {
-    fetch(`https://mobile-hut-server.vercel.app/myproduct/${id}`, {
+    fetch(`http://localhost:5000/myproduct/${id}`, {
       method: "DELETE",
       headers: {
         authorization: `bearer ${localStorage.getItem("accessToken")}`,
@@ -17,7 +17,7 @@ const MyProductCard = ({ myProduct, refetch }) => {
       });
   };
   const handleDelete = (id) => {
-    fetch(`https://mobile-hut-server.vercel.app/myBookingDelete/${id}`, {
+    fetch(`http://localhost:5000/myBookingDelete/${id}`, {
       method: "DELETE",
       headers: {
         authorization: `bearer ${localStorage.getItem("accessToken")}`,
@@ -31,7 +31,7 @@ const MyProductCard = ({ myProduct, refetch }) => {
       });
   };
   const handleProductAdvertise = (id) => {
-    fetch(`https://mobile-hut-server.vercel.app/advertiseproduct/${id}`, {
+    fetch(`http://localhost:5000/advertiseproduct/${id}`, {
       method: "PUT",
       headers: {
         authorization: `bearer ${localStorage.getItem("accessToken")}`,

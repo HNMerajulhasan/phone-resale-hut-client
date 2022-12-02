@@ -37,7 +37,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`https://mobile-hut-server.vercel.app/category/${params?.id}`),
+          fetch(`http://localhost:5000/category/${params?.id}`),
       },
       {
         path: "/mybookings",

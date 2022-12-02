@@ -7,7 +7,7 @@ const AllBuyers = () => {
   const { data: allUsers = [], refetch } = useQuery({
     queryKey: ["allUsers"],
     queryFn: async () => {
-      const res = await fetch("https://mobile-hut-server.vercel.app/allbuyer");
+      const res = await fetch("http://localhost:5000/allbuyer");
       const data = await res.json();
       return data;
     },
@@ -15,7 +15,7 @@ const AllBuyers = () => {
 
   const handleUserDelete = (email) => {
     console.log(email);
-    fetch(`https://mobile-hut-server.vercel.app/users/delete/${email}`, {
+    fetch(`http://localhost:5000/users/delete/${email}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
