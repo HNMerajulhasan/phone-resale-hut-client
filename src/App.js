@@ -4,6 +4,7 @@ import { RouterProvider } from "react-router-dom";
 import router from "./Layout/Routes.js/Routes";
 import { Toaster } from "react-hot-toast";
 
+//App.js component
 function App() {
   return (
     <div className="w-4/5 mx-auto ">
