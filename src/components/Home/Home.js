@@ -7,7 +7,7 @@ import PeopleSays from "./PeopleSays";
 
 const Home = () => {
   return (
-    <div className="mx-5">
+    <div className="">
       <Banner></Banner>
       <Categories></Categories>
       <AdvertiseProducts></AdvertiseProducts>

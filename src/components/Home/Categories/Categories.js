@@ -15,10 +15,10 @@ const Categories = () => {
     <div>
       <h1 className="text-4xl my-20 font-bold text-center">
         {" "}
-        <span className="text-emerald-600 mr-2">Select A Brand To</span>
-        Order Your One :
+        <span className="text-emerald-600 mr-2">Below Select Your Brand To</span>
+        Order :
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 ">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 ml-36">
         {categories?.map((category) => (
           <div key={category?._id}>
             <Link to={`/category/${category?._id}`}>

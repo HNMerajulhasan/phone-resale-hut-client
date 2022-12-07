@@ -12,6 +12,7 @@ import MyBookings from "../../components/MyBookings/MyBookings";
 import MyProducts from "../../components/MyProducts/MyProducts";
 import SignUp from "../../components/SignUp/SignUp";
 import Main from "../Main/Main";
+import AdminRoute from "./AdminRoute/AdminRoute";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
 
 const router = createBrowserRouter([
@@ -71,7 +72,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/dashboard/allusers",
-        element: <Allslellers></Allslellers>,
+        element: <Allslellers></Allslellers>
       },
       {
         path: "/dashboard/allbuyer",

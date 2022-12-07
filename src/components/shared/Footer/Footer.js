@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
       </div>
       <div>
-        <p>Copyright © 2022 - Kamrul Hasan</p>
+        <p>Copyright © 2022 - H.M Merajul Hasan</p>
       </div>
     </footer>
   );
