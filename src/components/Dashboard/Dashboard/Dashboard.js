@@ -12,7 +12,7 @@ const Dashboard = () => {
     queryKey: ["option"],
     queryFn: async () => {
       const res = await fetch(
-        `http://localhost:5000/allusers/${user?.email}`
+        `https://phone-resale-bazar-server.vercel.app/allusers/${user?.email}`
       );
       const data = await res.json();
       return data;

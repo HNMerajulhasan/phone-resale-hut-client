@@ -17,7 +17,7 @@ const AddProduct = () => {
   const { data: categories = [], isLoading } = useQuery({
     queryKey: ["category"],
     queryFn: () =>
-      fetch("http://localhost:5000/category").then((res) =>
+      fetch("https://phone-resale-bazar-server.vercel.app/category").then((res) =>
         res.json()
       ),
   });
@@ -54,7 +54,7 @@ const AddProduct = () => {
           };
 
           //Save Product to the database
-          fetch("http://localhost:5000/products", {
+          fetch("https://phone-resale-bazar-server.vercel.app/products", {
             method: "POST",
             headers: {
               "content-type": "application/json",

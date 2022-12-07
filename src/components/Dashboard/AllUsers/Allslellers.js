@@ -7,13 +7,13 @@ const Allslellers = () => {
   const { data: allUsers = [], refetch } = useQuery({
     queryKey: ["allUsers"],
     queryFn: async () => {
-      const res = await fetch("http://localhost:5000/allseller");
+      const res = await fetch("https://phone-resale-bazar-server.vercel.app/allseller");
       const data = await res.json();
       return data;
     },
   });
   const handleMakeAdmin = (email) => {
-    fetch(`http://localhost:5000/users/admin/${email}`, {
+    fetch(`https://phone-resale-bazar-server.vercel.app/users/admin/${email}`, {
       method: "PUT",
     })
       .then((res) => res.json())
@@ -26,7 +26,7 @@ const Allslellers = () => {
       });
   };
   const handleRemoveAdmin = (email) => {
-    fetch(`http://localhost:5000/users/noadmin/${email}`, {
+    fetch(`https://phone-resale-bazar-server.vercel.app/users/noadmin/${email}`, {
       method: "PUT",
     })
       .then((res) => res.json())
@@ -39,7 +39,7 @@ const Allslellers = () => {
       });
   };
   const handleVerifyUser = (email) => {
-    fetch(`http://localhost:5000/users/varify/${email}`, {
+    fetch(`https://phone-resale-bazar-server.vercel.app/users/varify/${email}`, {
       method: "PUT",
     })
       .then((res) => res.json())
@@ -52,7 +52,7 @@ const Allslellers = () => {
       });
   };
   const handleUnverifyUser = (email) => {
-    fetch(`http://localhost:5000/users/unvarify/${email}`, {
+    fetch(`https://phone-resale-bazar-server.vercel.app/users/unvarify/${email}`, {
       method: "PUT",
     })
       .then((res) => res.json())
@@ -66,7 +66,7 @@ const Allslellers = () => {
   };
   const handleUserDelete = (email) => {
     console.log(email);
-    fetch(`http://localhost:5000/users/delete/${email}`, {
+    fetch(`https://phone-resale-bazar-server.vercel.app/users/delete/${email}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

@@ -10,7 +10,7 @@ const ProductCard = ({ product, setBookingProduct }) => {
     queryKey: ["usersVar", product?.email],
     queryFn: async () => {
       const res = await fetch(
-        `http://localhost:5000/usersVar/${product?.email}`
+        `https://phone-resale-bazar-server.vercel.app/usersVar/${product?.email}`
       );
       const data = await res.json();
       console.log(data);

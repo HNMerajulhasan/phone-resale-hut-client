@@ -9,7 +9,7 @@ const MyBookings = () => {
     queryKey: ["mybookings/:email"],
     queryFn: async () => {
       const res = await fetch(
-        `http://localhost:5000/dashboard/mybookings/${user?.email}`
+        `https://phone-resale-bazar-server.vercel.app/dashboard/mybookings/${user?.email}`
       );
       const data = await res.json();
       return data;

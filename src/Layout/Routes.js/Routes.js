@@ -38,7 +38,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/category/${params?.id}`),
+          fetch(`https://phone-resale-bazar-server.vercel.app/category/${params?.id}`),
       },
       {
         path: "/mybookings",

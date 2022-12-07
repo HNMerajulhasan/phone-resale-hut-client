@@ -20,7 +20,7 @@ const BookingModal = ({ bookingProduct, setBookingProduct }) => {
       bookingID: bookingProduct?._id,
     };
 
-    fetch("http://localhost:5000/bookings", {
+    fetch("https://phone-resale-bazar-server.vercel.app/bookings", {
       method: "POST",
       headers: {
         "content-type": "application/json",
